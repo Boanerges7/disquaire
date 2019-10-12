@@ -152,7 +152,7 @@ if os.environ.get('ENV') == 'PRODUCTION':
         os.path.join(PROJECT_ROOT, 'static'),
     )
     
-    STATTICFILES_STOREAGE = 'whitenoise.storage.CompressedManifestStaticStorage'
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
         # Database settings
     db_from_env = dj_database_url.config(conn_max_age=500)
