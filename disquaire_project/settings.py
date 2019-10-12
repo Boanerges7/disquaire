@@ -144,14 +144,26 @@ INTERNAL_IPS = ['127.0.0.1']
 
 if os.environ.get('ENV') == 'PRODUCTION':
         # static files settings
-    PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-    STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+    # PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+    # STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
-    # Extra places for collectstatic to find static files
-    STATICFILES_DIRS = (
-        os.path.join(PROJECT_ROOT, 'static'),
-    )
+    # # Extra places for collectstatic to find static files
+    # STATICFILES_DIRS = (
+    #     os.path.join(PROJECT_ROOT, 'static'),
+    # )
     
+    # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+    #     # Database settings
+    # db_from_env = dj_database_url.config(conn_max_age=500)
+    # DATABASES['default'].update(db_from_env)
+
+    config['STATIC_ROOT'] = os.path.join(config['BASE_DIR'], 'staticfiles')
+    config['STATIC_URL'] = '/static/'
+
+        # Ensure STATIC_ROOT exists.
+    os.makedirs(config['STATIC_ROOT'], exist_ok=True)
+
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
         # Database settings
