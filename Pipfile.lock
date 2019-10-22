@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b811f6d644fe63e5d50edeac2f47d1e331187b53582e01fe71f43d3111878134"
+            "sha256": "241252e687e9240936c4c691cb1056a46c3c4aef0daab925d0238cf1e7a49cd0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,7 +18,6 @@
     "default": {
         "dj-database.url": {
             "hashes": [
-                "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163",
                 "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"
             ],
             "index": "pypi",
@@ -26,11 +25,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:7c3543e4fb070d14e10926189a7fcf42ba919263b7473dceaefce34d54e8a119",
-                "sha256:a2814bffd1f007805b19194eb0b9a331933b82bd5da1c3ba3d7b7ba16e06dc4b"
+                "sha256:16a5d54411599780ac9dfe3b9b38f90f785c51259a584e0b24b6f14a7f69aae8",
+                "sha256:9a2f98211ab474c710fcdad29c82f30fc14ce9917c7a70c3682162a624de4035"
             ],
             "index": "pypi",
-            "version": "==2.2"
+            "version": "==2.2.4"
         },
         "django-debug-toolbar": {
             "hashes": [
