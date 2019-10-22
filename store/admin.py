@@ -56,7 +56,7 @@ class BookingInline(admin.TabularInline, AdminURLMixin):
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-	inlines = [BookingInline,] # list of bookings mande by a contact
+	inlines = [BookingInline,] # list of bookings made by a contact
 
 
 #-------------------------------------------------#
