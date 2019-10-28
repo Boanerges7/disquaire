@@ -102,5 +102,5 @@ class BookingPageTestCase(TestCase):
 		# VERIFICATION: 2ND METHOD
 
 			# Make the query again, otherwise `available` will still be set at `True`
-        self.album.refresh_from_db()
-        self.assertFalse(self.album.available)
+		self.album.refresh_from_db()
+		self.assertFalse(self.album.available)
